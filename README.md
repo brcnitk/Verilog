@@ -35,10 +35,10 @@ Verilog (Verifying Logic) is a structural and behavior language that defines fou
 <td>
   
 ```matlab
-module gate_nand(A, B, Output);
+module gate_nand(A, B, F);
   input A, B;
-  output Output;
-  nand (Output, A, B);
+  output F;
+  nand (F, A, B);
 endmodule
 
 ```
@@ -46,10 +46,10 @@ endmodule
 <td>
   
 ```matlab
-module gate_nand(A, B, Output);
+module gate_nand(A, B, F);
   input A, B;
-  output Output;
-  assign Ouput = ~(A & B);
+  output F;
+  assign F = ~(A & B);
 endmodule
 
 ```
